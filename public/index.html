@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Central Universitaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <span>📚</span>
+        <h2>Biblioteca Central</h2>
+      </div>
+
+      <p class="menu-title">MENÚ PRINCIPAL</p>
+
+      <nav>
+        <button class="nav-link active" data-section="inicio">
+          🏠 Inicio
+        </button>
+        <button class="nav-link" data-section="libros">
+          📚 Libros
+        </button>
+        <button class="nav-link" data-section="usuarios">
+          👥 Usuarios
+        </button>
+        <button class="nav-link" data-section="prestamos">
+          📋 Préstamos
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Sistema de Gestión Bibliotecaria</p>
+        <small>Evaluación 3 · BDY1103</small>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div>
+          <h1>Panel de administración</h1>
+          <p>Gestiona tu biblioteca de manera sencilla.</p>
+        </div>
+        <div class="avatar">BC</div>
+      </header>
+
+      <section id="inicio" class="section active">
+        <div class="welcome">
+          <h2>Bienvenido a Biblioteca Central 📚</h2>
+          <p>Consulta libros, usuarios y préstamos desde un solo lugar.</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <span>📚 Total de libros</span>
+            <h2 id="totalLibros">—</h2>
+          </div>
+
+          <div class="stat-card">
+            <span>✅ Libros disponibles</span>
+            <h2 id="librosDisponibles">—</h2>
+          </div>
+
+          <div class="stat-card">
+            <span>👥 Usuarios registrados</span>
+            <h2 id="totalUsuarios">—</h2>
+          </div>
+
+          <div class="stat-card">
+            <span>📋 Préstamos activos</span>
+            <h2 id="prestamosActivos">—</h2>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Gestión bibliotecaria</h3>
+          <p>Selecciona una opción del menú para comenzar.</p>
+        </div>
+      </section>
+
+      <section id="libros" class="section">
+        <div class="section-heading">
+          <h2>Gestión de libros</h2>
+          <button class="btn-primary" id="nuevoLibro">
+            + Agregar libro
+          </button>
+        </div>
+
+        <div class="panel">
+          <input
+            type="search"
+            id="buscarLibro"
+            placeholder="Buscar libro por título o autor..."
+          >
+
+          <div id="listaLibros" class="items-grid"></div>
+        </div>
+      </section>
+
+      <section id="usuarios" class="section">
+        <div class="section-heading">
+          <h2>Gestión de usuarios</h2>
+          <button class="btn-primary" id="nuevoUsuario">
+            + Agregar usuario
+          </button>
+        </div>
+
+        <div class="panel">
+          <div id="listaUsuarios" class="items-grid"></div>
+        </div>
+      </section>
+
+      <section id="prestamos" class="section">
+        <div class="section-heading">
+          <h2>Gestión de préstamos</h2>
+          <button class="btn-primary" id="nuevoPrestamo">
+            + Nuevo préstamo
+          </button>
+        </div>
+
+        <div class="panel">
+          <div id="listaPrestamos" class="items-grid"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="cerrarModal" class="close-btn" aria-label="Cerrar">
+        ×
+      </button>
+      <h2 id="modalTitulo">Formulario</h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

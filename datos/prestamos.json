@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "6af64c84c3437152b4e89d8a"
+  },
+  "id_prestamo": 1,
+  "id_usuario": 1,
+  "id_libro": 1,
+  "fecha_prestamo": {
+    "$date": "2026-11-12T00:00:00.000Z"
+  },
+  "fecha_devolucion": {
+    "$date": "2026-11-19T00:00:00.000Z"
+  },
+  "estado": "ACTIVO",
+  "multa_acumulada": 0
+},
+{
+  "_id": {
+    "$oid": "6af66143dab5ad2a3d264546"
+  },
+  "id_prestamo": 2,
+  "id_usuario": 4,
+  "id_libro": 2,
+  "fecha_prestamo": {
+    "$date": "2026-11-13T01:00:51.600Z"
+  },
+  "fecha_devolucion": {
+    "$date": "2026-11-20T01:00:51.600Z"
+  },
+  "estado": "DEVUELTO",
+  "multa_acumulada": 0,
+  "fecha_devolucion_real": {
+    "$date": "2026-11-13T01:06:29.226Z"
+  }
+}]

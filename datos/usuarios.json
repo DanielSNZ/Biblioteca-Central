@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6af64b8dc3437152b4e89d76"
+  },
+  "id_usuario": 1,
+  "nombre": "Ana Pérez",
+  "correo": "ana@universidad.cl"
+},
+{
+  "_id": {
+    "$oid": "6af64bc2c3437152b4e89d7a"
+  },
+  "id_usuario": 2,
+  "nombre": "Carlos Soto",
+  "correo": "carlos@universidad.cl"
+},
+{
+  "_id": {
+    "$oid": "6af64bcfc3437152b4e89d7d"
+  },
+  "id_usuario": 3,
+  "nombre": "María Rojas",
+  "correo": "maria@universidad.cl"
+},
+{
+  "_id": {
+    "$oid": "6af65f62b1e9de8d875e3e26"
+  },
+  "id_usuario": 4,
+  "nombre": "Pedro González Perez",
+  "correo": "pedro@universidad.cl"
+}]

@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6af64bf3c3437152b4e89d80"
+  },
+  "id_libro": 1,
+  "titulo": "Introducción a Bases de Datos",
+  "autor": "Autor A",
+  "disponible": false
+},
+{
+  "_id": {
+    "$oid": "6af64c1ec3437152b4e89d83"
+  },
+  "id_libro": 2,
+  "titulo": "Programación en Java",
+  "autor": "Autor B",
+  "disponible": true
+},
+{
+  "_id": {
+    "$oid": "6af64c2ac3437152b4e89d86"
+  },
+  "id_libro": 3,
+  "titulo": "Redes de Computadores",
+  "autor": "Autor C",
+  "disponible": true
+}]
